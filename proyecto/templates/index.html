@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1>Página Inicial</h1>
+
+        <nav class="navegacion">
+            <ul>
+                <a href="{{ url_for('pagina1') }}">Pagina 1</a>
+                <a href="{{ url_for('pagina2') }}">Pagina 2</a>
+                <a href="{{ url_for('pagina3') }}">Pagina 3</a>
+                <a href="{{ url_for('pagina4') }}">Pagina 4</a>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido">
+        <h1>Bienvenido</h1>
+        <p>Este es el inicio de la pagina, por favor escoger una pagina del menu superior</p>
+    </main>
+
+</body>
+
+</html>
