@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1>Página 1</h1>
+
+        <nav class="navegacion">
+            <a href="{{ url_for('index') }}">Inicio</a>
+            <a href="{{ url_for('pagina2') }}">Página 2</a>
+            <a href="{{ url_for('pagina3') }}">Página 3</a>
+            <a href="{{ url_for('pagina4') }}">Página 4</a>
+        </nav>
+    </header>
+
+    <main class="contenido">
+
+        <section class="seccion">
+            <h2>Tabla de estudiantes</h2>
+
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Curso</th>
+                        <th>Edad</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Juan</td>
+                        <td>Desarrollo Web</td>
+                        <td>20</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pedro</td>
+                        <td>Programación</td>
+                        <td>21</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!--Formulario-->
+        <section class="seccion">
+            <h2>Formulario</h2>
+
+            <form class="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo">
+
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha">
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!--Lista anidada-->
+        <section class="seccion">
+            <h2>Lista de cursos</h2>
+
+            <ul>
+                <li>
+                    Desarrollo Web
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Flask</li>
+                    </ul>
+                </li>
+
+                <li>
+                    Base de Datos
+                    <ul>
+                        <li>MySQL</li>
+                        <li>SQL</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!--Pie de página-->
+    <footer class="pie">
+        <p>Página 1 - Desarrollo Web</p>
+    </footer>
+</body>
+</html>
