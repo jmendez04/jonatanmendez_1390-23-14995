@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 4</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <h1>Página 4</h1>
+
+        <nav class="navegacion">
+            <a href="{{ url_for('index') }}">Inicio</a>
+            <a href="{{ url_for('pagina1') }}">Página 1</a>
+            <a href="{{ url_for('pagina2') }}">Página 2</a>
+            <a href="{{ url_for('pagina3') }}">Página 3</a>
+        </nav>
+    </header>
+
+    <main class="contenido">
+
+        <!--Article-->
+        <article class="seccion">
+            <h2>Información del curso</h2>
+
+            <p>
+                En este curso aprenderemos los conceptos básicos
+                necesarios para desarrollar aplicaciones web.
+            </p>
+        </article>
+
+        <!--Tabla-->
+        <section class="seccion">
+            <h2>Horario</h2>
+
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Día</th>
+                        <th>Curso</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>Desarrollo Web</td>
+                        <td>8:00 AM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Sábado</td>
+                        <td>Programación</td>
+                        <td>10:00 AM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!--Ruta dinámica con Jinja2-->
+        <section class="seccion">
+            <h2>Ruta dinámica</h2>
+
+            <p>
+                Presiona el enlace para mostrar el nombre del estudiante.
+            </p>
+
+            <a href="{{ url_for('estudiante', nombre='Jonatan') }}">
+                Ver estudiante Jonatan
+            </a>
+        </section>git 
+
+    </main>
+
+    <!--Pie de página-->
+    <footer class="pie">
+        <p>Página 4 - Desarrollo Web</p>
+    </footer>
+
+</body>
+</html>
