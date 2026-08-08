@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 3</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <h1>Página 3</h1>
+
+        <nav class="navegacion">
+            <a href="{{ url_for('index') }}">Inicio</a>
+            <a href="{{ url_for('pagina1') }}">Página 1</a>
+            <a href="{{ url_for('pagina2') }}">Página 2</a>
+            <a href="{{ url_for('pagina4') }}">Página 4</a>
+        </nav>
+    </header>
+
+    <main class="contenido">
+
+        <!--formulario con diferentes tipos de input -->
+        <section class="seccion">
+            <h2>Registro</h2>
+
+            <form class="formulario">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario">
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password">
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+
+                <button type="submit">Registrar</button>
+            </form>
+        </section>
+
+        <!--aside -->
+        <aside class="seccion">
+            <h2>Información</h2>
+
+            <p>
+                Todos los campos del formulario deben ser completados
+                correctamente.
+            </p>
+        </aside>
+
+        <!--lista de descripción-->
+        <section class="seccion">
+            <h2>Conceptos</h2>
+
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lenguaje utilizado para crear la estructura de una página.</dd>
+
+                <dt>CSS</dt>
+                <dd>Lenguaje utilizado para agregar estilos a una página.</dd>
+
+                <dt>Flask</dt>
+                <dd>Framework de Python utilizado para aplicaciones web.</dd>
+            </dl>
+        </section>
+
+    </main>
+
+    <!--Pie de página -->
+    <footer class="pie">
+        <p>Página 3 - Desarrollo Web</p>
+    </footer>
+
+</body>
+</html>
