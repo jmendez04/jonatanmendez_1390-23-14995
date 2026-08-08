@@ -1,0 +1,85 @@
+/*Configuracion general de la pagina*/
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+/*Encabezado de las paginas*/
+.encabezado {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/*Barra de navegacion*/
+.navegacion {
+    margin-top: 15px;
+}
+
+/*Enlaces de navegacion*/
+.navegacion a {
+    color: rgb(2, 0, 0);
+    text-decoration: none;
+    margin: 10px;
+}
+
+/*Contenido principal*/
+.contenido {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/*Secciones de las paginas*/
+.seccion {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #cccccc;
+}
+
+/*Tablas*/
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla th,
+.tabla td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+/*Formularios*/
+.formulario label {
+    display: block;
+    margin-top: 10px;
+}
+
+.formulario input {
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/*Botones*/
+.formulario button {
+    display: block;
+    margin-top: 15px;
+    padding: 8px 15px;
+}
+
+/*Imagen*/
+.imagen img {
+    width: 300px;
+    max-width: 100%;
+}
+
+/*Pie de pagina*/
+.pie {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
