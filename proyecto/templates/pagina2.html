@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}">
+</head>
+
+<body>
+    <header class="encabezado">
+        <h1>Página 2</h1>
+
+        <nav class="navegacion">
+            <a href="{{ url_for('index') }}">Inicio</a>
+            <a href="{{ url_for('pagina1') }}">Página 1</a>
+            <a href="{{ url_for('pagina3') }}">Página 3</a>
+            <a href="{{ url_for('pagina4') }}">Página 4</a>
+        </nav>
+    </header>
+
+    <main class="contenido">
+
+        <!--article-->
+        <article class="seccion">
+            <h2>Mi perfil</h2>
+
+            <p>
+                Mi nombre es Jonatán Isaac Mendez Diaz, tengo 24 años, estudio ingenieria en sistemas en la universidad 
+                Mariano Galvez de Guatemala, cursando el 8vo semestre. 
+            </p>
+        </article>
+
+        <!--Figure y figcaption-->
+        <section class="seccion">
+            <h2>Imagen</h2>
+
+            <figure class="imagen">
+                <img src="{{ url_for('static', filename='css/img/logo.jpg') }}"
+                     alt="Imagen de desarrollo web">
+
+                <figcaption>
+                    Logo de una marca reconocida de automoviles 
+                </figcaption>
+            </figure>
+        </section>
+
+        <!--Lista ordenada-->
+        <section class="seccion">
+            <h2>Pasos para crear una página</h2>
+
+            <ol>
+                <li>Crear el archivo HTML</li>
+                <li>Agregar la estructura HTML</li>
+                <li>Crear los estilos CSS</li>
+                <li>Ejecutar la página</li>
+            </ol>
+        </section>
+
+    </main>
+
+</body>
+</html>
